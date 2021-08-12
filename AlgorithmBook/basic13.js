@@ -55,7 +55,54 @@ function arrayOdds(){
 }
 arrayOdds();
 
+// 5. Greater Than Y
+let array=[3,346,45,234,78,2,45,12,56,99,-4,501];
+function greaterThanY(array,y){
+        x=[];
+    for(i=0;i<array.length;i++){
+        if(array[i]>y){
+            x.push(array[i]);
+        }
+    };
+    console.log(x);
+}
+greaterThanY(array,56);
 
+// 6. Max Min Average
+function maxMinAvg(array){
+    max=array[0];
+    min=array[0];
+    sum=0;
+    total=array.length;
+    for(i=0;i<array.length;i++){
+        if(array[i]>max){
+            max=array[i];
+        }
+        if(array[i]<min){
+            min=array[i];
+        }
+        sum+=array[i];
+    }
+    avg=(sum/total);
+    console.log(`Max: ${max}`);
+    console.log(`Min: ${min}`);
+    console.log(`Sum: ${sum}`);
+    console.log(`Avg: ${avg}`);
+    console.log(`Num In Array: ${array.length}`);
+}
+let test=[1,2,3];
+maxMinAvg(array);
+
+// 7. Swap String For Array Negative Values
+function swapNegArrValues(array){
+    for(i=0;i<array.length;i++){
+        if(array[i]<0){
+            array[i]=`Dojo`;
+        }
+    }
+    console.log(array);
+}
+swapNegArrValues(array);
 
 
 
