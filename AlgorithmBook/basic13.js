@@ -102,7 +102,63 @@ function swapNegArrValues(array){
     }
     console.log(array);
 }
-swapNegArrValues(array);
+// swapNegArrValues(array);
+
+// 8. Print Odds 1-255
+function printOdds255(){
+    for(i=1;i<256;i+=2){
+        console.log(i);
+    }
+}
+
+// 9. Itereate and Print Array
+function printArray(array){
+    for(i in array){
+        console.log(`Array index ${i} has a value of ${array[i]}`);
+    }
+}
+
+// 10. Get and print average
+function printAvg(array){
+    sum = 0;
+    for(i in array){
+        sum += array[i];
+    }
+    avg = sum / array.length;
+    console.log(`Sum is ${sum} and Average is ${avg}`);
+}
+
+// 11. Square the values
+function squareValues(array){
+    console.log(array);
+    for(i in array){
+        square = array[i] * array[i];
+        array[i] = square;
+    }
+    console.log(array);
+}
+
+// 12. Zero Out Negative Numbers
+function zeroNegative(array){
+    console.log(array);
+    for(i in array){
+        if(array[i] < 0){
+            array[i] = 0
+        }
+    }
+    console.log(array);
+}
+
+// 13. Shift Array Values
+function shiftArray(array){
+    console.log(array);
+    length = array.length - 1;
+    for(i=0;i<length;i++){
+        array[i] = array[i+1];
+    }
+    array[length] = 0;
+    console.log(array);
+}
 
 
 
